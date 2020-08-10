@@ -13,13 +13,13 @@ class FibTest(unittest.TestCase):
         self.assertRaises(ValueError, fib, -1)
 
     def test_generate_0_number_fibs(self):
-        pass
+        self.assertRaises(ValueError, fib, 0)
 
     def test_generate_1_number_fibs(self):
-        pass
+        self.assertEqual(fib(1), [1])
 
     def test_generate_2_number_fibs(self):
-        pass
+        self.assertEqual(fib(2), [1, 1])
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 
 def fib(n):
-    if n < 0:
+    if n <= 0:
         raise ValueError('请输入一个正数')
     if n == 1:
         return [1]
