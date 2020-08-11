@@ -1,0 +1,20 @@
+create table student(
+id varchar(5),
+name varchar(5),
+age varchar(3),
+sex varchar(1)
+)
+
+create table subject(
+id varchar(5),
+subject varchar(10),
+teacher varchar(4),
+description varchar(10)
+)
+
+create table score(
+id varchar(5),
+student_id varchar(5),
+subject_id varchar(5),
+score varchar(3)
+)
